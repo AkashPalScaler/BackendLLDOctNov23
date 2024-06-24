@@ -15,7 +15,7 @@ public class Student {
     //You can't access non-static members from static context
     public static void printNoOfStudents(){
         System.out.println("No of students: " + noOfStudents);
-        fun();
+//        fun(); //Non-static method can't be referenced from static
     }
 
     //You can't access non-static members from static context

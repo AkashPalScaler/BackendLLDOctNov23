@@ -1,4 +1,4 @@
-package AdderSubtractor;
+package AdderSubtractorAtomic;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -19,6 +19,6 @@ public class Client {
         addF.get(); //Constantly checkking on the task, is it over?
         addS.get();
 
-        System.out.println("Value count v: " + v.count);
+        System.out.println("Value count : " + v.count);
     }
 }

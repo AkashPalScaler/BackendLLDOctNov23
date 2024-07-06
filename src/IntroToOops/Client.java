@@ -1,5 +1,9 @@
 package IntroToOops;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class Client {
     public static void main(String[] args) {
         Student s = new Student();

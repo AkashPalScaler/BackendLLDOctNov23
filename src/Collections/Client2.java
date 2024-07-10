@@ -3,6 +3,7 @@ package Collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 
 class PSPComparator implements Comparator<Student> {
 
@@ -35,6 +36,7 @@ public class Client2 {
         s3.age = 25;
 
 
+
         ArrayList<Student> students = new ArrayList<>();
         students.add(s);
         students.add(s2);
@@ -51,5 +53,6 @@ public class Client2 {
             System.out.println(o.psp);
             System.out.println("--------------");
         }
+
     }
 }

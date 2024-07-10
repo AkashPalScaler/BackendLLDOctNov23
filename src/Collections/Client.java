@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.*;
+import java.util.function.Supplier;
 
 public class Client {
     public static void main(String[] args) {
@@ -123,7 +124,6 @@ public class Client {
      System.out.println("LinkedHashMap : "+ map2);
      System.out.println("TreeMap : "+ map3);
 
-     Hashtable
 
     }
 }

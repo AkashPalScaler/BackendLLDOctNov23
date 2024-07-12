@@ -1,10 +1,7 @@
 package LambdaAndStreams;
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.*;
 
 public class Lambda {
@@ -71,14 +68,21 @@ public class Lambda {
         Collections.sort(studentList, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
-                return o1.age - o2.age;
+//                if(o1.age > o2.age){
+//                    return -1; //Negative
+//                } else if(o1.age < o2.age){
+//                    return 1; //Positive
+//                }
+//                return 0;
+
+                return o2.age - o1.age;
             }
         });
 
         Collections.sort(studentList, (o1, o2) -> o1.age - o2.age);
 
         List<Integer> nums = List.of(1,5,2,6,9);
-        Collections.sort(nums, (o1, o2) -> o1 - o2);
+//        Collections.sort(nums, (o1, o2) -> o1 - o2);
 
         for(Student o: studentList){
             System.out.println(o.name);

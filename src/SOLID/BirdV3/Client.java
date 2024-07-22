@@ -5,10 +5,10 @@ public class Client {
         Bird pigeon = new Pigeon();
         pigeon.type = "pigeon";
 
-        pigeon.fly();
+//        pigeon.fly();
 
         Bird penguin = new Penguin();
 
-        penguin.fly();;
+//        penguin.fly();;
     }
 }

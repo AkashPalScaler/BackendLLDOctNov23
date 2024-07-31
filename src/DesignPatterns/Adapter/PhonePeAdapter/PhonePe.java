@@ -1,17 +1,16 @@
-package DesignPatterns.Adapter.PhonePe;
+package DesignPatterns.Adapter.PhonePeAdapter;
 
-import DesignPatterns.Adapter.Bank.ICICI.ICICIBankAPI;
 import DesignPatterns.Adapter.Bank.YesBank.YesBankAPI;
 
 public class PhonePe {
     String account;
-    YesBankAPI api;
+    UPIInterface api;
     PhonePeLoan phonePeLoan = new PhonePeLoan();
     Payment payment = new Payment();
 
-    public PhonePe(String account){
+    public PhonePe(String account, UPIInterface api){
         this.account = account;
-        api = new YesBankAPI();
+        this.api = api;
     }
     boolean checkLoan(){
         return phonePeLoan.checkLoan(account, api);

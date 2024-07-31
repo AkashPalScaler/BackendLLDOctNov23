@@ -23,7 +23,7 @@ public class phonePe {
 
 
     //2nd Scenario
-    UnifiedUPInterface upi = new YesBankUPI();
+    UnifiedUPInterface upi = new ICICIBankUPI();
 
     int getBalance(String accnt){
         return upi.checkBalance(accnt);

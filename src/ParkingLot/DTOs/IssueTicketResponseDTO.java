@@ -2,9 +2,42 @@ package ParkingLot.DTOs;
 
 public class IssueTicketResponseDTO {
     long TicketID;
-    String TicketNumber;
+    Integer TicketNumber;
     String message;
-    String error;
+    ResponseStatus status;
+
+
+    public long getTicketID() {
+        return TicketID;
+    }
+
+    public void setTicketID(long ticketID) {
+        TicketID = ticketID;
+    }
+
+    public Integer getTicketNumber() {
+        return TicketNumber;
+    }
+
+    public void setTicketNumber(Integer ticketNumber) {
+        TicketNumber = ticketNumber;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public ResponseStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ResponseStatus status) {
+        this.status = status;
+    }
 }
 
 

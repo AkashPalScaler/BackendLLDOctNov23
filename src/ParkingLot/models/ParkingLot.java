@@ -11,6 +11,24 @@ public class ParkingLot extends BaseClass{
     List<Gate> entryGates;
     List<Gate> exitGates;
     List<SupportedVehicleType> supportedVehicleTypes;
+    ParkingSlotAllocationStrategyType parkingSlotAllocationStrategyType;
+
+    public ParkingSlotAllocationStrategyType getParkingSlotAllocationStrategyType() {
+        return parkingSlotAllocationStrategyType;
+    }
+
+    public void setParkingSlotAllocationStrategyType(ParkingSlotAllocationStrategyType parkingSlotAllocationStrategyType) {
+        this.parkingSlotAllocationStrategyType = parkingSlotAllocationStrategyType;
+    }
+
+    public List<SupportedVehicleType> getSupportedVehicleTypes() {
+        return supportedVehicleTypes;
+    }
+
+    public void setSupportedVehicleTypes(List<SupportedVehicleType> supportedVehicleTypes) {
+        this.supportedVehicleTypes = supportedVehicleTypes;
+    }
+
     ParkingLotStatusType parkingLotStatus;
 
     public String getName() {
@@ -43,14 +61,6 @@ public class ParkingLot extends BaseClass{
 
     public void setExitGates(List<Gate> exitGates) {
         this.exitGates = exitGates;
-    }
-
-    public List<VehicleType> getVehicleTypes() {
-        return vehicleTypes;
-    }
-
-    public void setVehicleTypes(List<VehicleType> vehicleTypes) {
-        this.vehicleTypes = vehicleTypes;
     }
 
     public ParkingLotStatusType getParkingLotStatus() {
